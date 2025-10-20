@@ -3,8 +3,7 @@ import express from 'express'
 import path from 'path'
 import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
-const carsRouter = require('./routes/cars');
-
+import carsRouter from './routes/cars.js';
 
 dotenv.config()
 

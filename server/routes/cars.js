@@ -1,11 +1,12 @@
-const express = require('express');
-const {
+
+import express from 'express';
+import {
   getAllCars,
   getCarById,
   createCar,
   updateCar,
   deleteCar,
-} = require('../controller/carsController');
+} from '../controller/carsController.js';
 
 const router = express.Router();
 
@@ -61,4 +62,4 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
