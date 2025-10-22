@@ -24,6 +24,18 @@ const App = () => {
     {
       path: '/edit/:id',
       element: <EditCar title='BOLT BUCKET | Edit' />
+    },
+    {
+      path: '/cars/:id',
+      element: <CarDetails title='BOLT BUCKET | View' />
+    },
+    {
+      path: '/cars/:id/edit',
+      element: <EditCar title='BOLT BUCKET | Edit' />
+    },
+    {
+      path: '/cars/edit/:id',
+      element: <EditCar title='BOLT BUCKET | Edit' />
     }
   ])
 
